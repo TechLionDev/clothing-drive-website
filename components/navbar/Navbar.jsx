@@ -7,17 +7,17 @@ const Navbar = () => {
   const currentRoute = router.pathname;
   let links = [
     {
-      name: "Home",
+      name: "Casa",
       url: "/",
       active: currentRoute === "/"
     },
     {
-      name: "About",
+      name: "Acerca",
       url: "/about",
       active: currentRoute === "/about"
     },
     {
-      name: "Contact",
+      name: "Contacto",
       url: "/contact",
       active: currentRoute === "/contact"
     }
