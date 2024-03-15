@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Highlight from "./Highlight";
 
 const Hero = () => {
   return (
@@ -22,7 +23,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className='font-bold text-3xl'
         >
-          La colecta de ropa de Nueva Jersey!
+          La <Highlight delay={1}>colecta de ropa</Highlight> de Nueva Jersey!
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -31,10 +32,10 @@ const Hero = () => {
           className='flex flex-col'
         >
           <p>
-          NJ Clothing Drive es una organización que quiere donar ropa a personas sin hogar.
+          NJ Clothing Drive es una organización que quiere donar ropa a <Highlight delay={2} >personas sin hogar</Highlight>.
           </p>
           <p>
-          Nuestro objetivo es que no haya personas sin hogar sin ropa. Nosotros aceptamos todas las formas y tamaños.
+          Nuestro objetivo es que no haya <Highlight delay={3}>personas sin hogar</Highlight> sin ropa. Nosotros aceptamos todas las formas y tamaños.
           </p>
         </motion.div>
         <motion.span
