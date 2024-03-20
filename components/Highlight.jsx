@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import { RoughNotation } from "react-rough-notation";
 import { useEffect, useState } from "react";
 
 export default function Highlight({

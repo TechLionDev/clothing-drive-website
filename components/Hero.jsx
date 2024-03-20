@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <>
       <motion.section
-        className='text-center justify-center items-center flex flex-col gap-8 bg-crust py-16 h-screen px-12 text-text'
+        className='flex flex-col items-center justify-center h-screen gap-8 px-12 py-16 text-center bg-crust text-text'
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
@@ -21,7 +21,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className='font-bold text-3xl'
+          className='text-3xl font-bold'
         >
           La <Highlight delay={1}>colecta de ropa</Highlight> de Nueva Jersey!
         </motion.h1>
@@ -42,7 +42,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className='flex justify-center items-center gap-8'
+          className='flex items-center justify-center gap-8'
         >
           <motion.button
             whileHover={{ scale: 1.1 }}
@@ -50,14 +50,17 @@ const Hero = () => {
             onClick={() => {
               document.getElementById("down").scrollIntoView({ behavior: "smooth" });
             }}
-            className='border-blue border-2 hover:bg-blue font-bold py-2 px-4 rounded hover:text-crust'
+            className='px-4 py-2 font-bold border-2 rounded border-blue hover:bg-blue hover:text-crust'
           >
             Leer mas
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='bg-blue border-2 border-blue hover:bg-transparent font-bold py-2 px-4 rounded text-crust hover:text-text'
+            className='px-4 py-2 font-bold border-2 rounded bg-blue border-blue hover:bg-transparent text-crust hover:text-text'
+            onClick={() => {
+              document.getElementById("howdonate").scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Donar mi chaqueta!
           </motion.button>
