@@ -52,6 +52,17 @@ export default function CHead({ title }) {
         />
         <meta name='theme-color' content='#11111b' />
       </Head>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.onload = function() {
+            setTimeout(function() {
+              window.scrollTo(0, 0);
+            }, 1);
+          }
+        `
+        }}
+      />
     </>
   );
 }

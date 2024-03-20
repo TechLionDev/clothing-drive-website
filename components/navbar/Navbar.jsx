@@ -12,14 +12,9 @@ const Navbar = () => {
       active: currentRoute === "/"
     },
     {
-      name: "Acerca",
-      url: "/about",
-      active: currentRoute === "/about"
-    },
-    {
-      name: "Contacto",
-      url: "/contact",
-      active: currentRoute === "/contact"
+      name: "Voluntario",
+      url: "/volunteer",
+      active: currentRoute === "/volunteer"
     }
   ];
   return (
@@ -29,7 +24,7 @@ const Navbar = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className='flex justify-start items-center font-bold cursor-pointer'
+          className='flex items-center justify-start font-bold cursor-pointer'
           onClick={() => router.push('/')}
         >
           <motion.img
@@ -41,7 +36,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
           />
           <motion.p
-            className="hidden sm:inline text-2xl pb-2"
+            className="hidden pb-2 text-2xl sm:inline"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -49,7 +44,7 @@ const Navbar = () => {
             Colecta De Ropa
           </motion.p>
         </motion.div>
-        <div className='flex justify-end items-center'>
+        <div className='flex items-center justify-end'>
           <Links links={links} />
         </div>
       </nav>
