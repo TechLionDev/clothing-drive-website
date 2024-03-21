@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-base text-text;
+  @apply text-lg bg-base text-text;
 }
 
 * {
