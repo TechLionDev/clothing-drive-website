@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import Highlight from "@/components/Highlight";
+import CHead from "@/components/CHead";
 
 const Project = () => {
     return (
         <>
+        <CHead title='Project' />
             <motion.section
                 className='text-center justify-center items-center flex flex-col gap-8 bg-crust p-12 text-text pt-[112px]'
                 initial={{ opacity: 0, scale: 0 }}
