@@ -12,6 +12,16 @@ const Navbar = () => {
       active: currentRoute === "/"
     },
     {
+      name: "El Problema",
+      url: "/problem",
+      active: currentRoute === "/problem"
+    },
+    {
+      name: "El Proyecto",
+      url: "/project",
+      active: currentRoute === "/project"
+    },
+    {
       name: "Voluntario",
       url: "/volunteer",
       active: currentRoute === "/volunteer"
