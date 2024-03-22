@@ -35,7 +35,7 @@ const Hero = () => {
           NJ Clothing Drive es una organización que quiere donar ropa a <Highlight delay={2} >personas sin hogar</Highlight>.
           </p>
           <p>
-          Nuestro objetivo es que no haya <Highlight delay={3}>personas sin hogar</Highlight> sin ropa. Nosotros aceptamos todas las formas y tamaños.
+          Nuestro objetivo es que no haya <Highlight delay={3}>personas sin hogar</Highlight> sin ropa. Nosotros aceptamos todas las formas y tamaños. <Highlight delay={4}>Esperamos</Highlight> que nos ayudes a lograr este objetivo.
           </p>
         </motion.div>
         <motion.span
