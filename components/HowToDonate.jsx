@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Highlight from "@/components/Highlight";
 
 const HowToDonate = () => {
   return (
@@ -25,7 +26,7 @@ const HowToDonate = () => {
           className='flex flex-col'
         >
           <p>
-          Puedes donar yendo a nuestros muchos lugares y trayendo ropa. Puede encontrar nuestras ubicaciones en nuestro sitio web. Esperamos que dones a nuestra causa.
+          Puede donar yendo a nuestras numerosas ubicaciones y trayendo ropa. Puede encontrar nuestras ubicaciones en nuestro sitio web. Puedes donar cualquier tipo de ropa que quieras. <Highlight delay={1}>Continuaremos</Highlight> aceptando donaciones durante todo el año. Esperamos que dones a nuestra causa.
           </p>
         </motion.div>
       </motion.section>
